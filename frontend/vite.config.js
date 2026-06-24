@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/SAVOUR-AND-CRUST-RESTAURENT-SITE/',
+  base: './',
   server: {
     port: 5173,
   },
