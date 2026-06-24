@@ -1,0 +1,144 @@
+.about {
+  padding: 7rem 2rem;
+  background: #0d0d0d;
+  overflow: hidden;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.about-images {
+  position: relative;
+  height: 500px;
+}
+
+.about-img {
+  position: absolute;
+  border-radius: 4px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-img-main {
+  top: 0;
+  left: 0;
+  width: 65%;
+  height: 100%;
+  background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80');
+  z-index: 2;
+}
+
+.about-img-secondary {
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 65%;
+  background-image: url('https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=600&q=80');
+  z-index: 1;
+  border: 4px solid #0d0d0d;
+}
+
+.section-tag {
+  color: #c9a96e;
+  font-size: 0.7rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 300;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.section-title-accent {
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  color: #c9a96e;
+}
+
+.about-description {
+  color: #999;
+  line-height: 1.8;
+  font-size: 0.95rem;
+  margin-bottom: 1.2rem;
+  font-weight: 300;
+}
+
+.about-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.about-feature {
+  text-align: center;
+  padding: 1.5rem 0.8rem;
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+.about-feature:hover {
+  border-color: rgba(201,169,110,0.3);
+}
+
+.about-feature-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.about-feature h4 {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.about-feature p {
+  color: #777;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 968px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-images {
+    height: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about {
+    padding: 4rem 1.5rem;
+  }
+
+  .about-images {
+    height: 280px;
+  }
+
+  .about-features {
+    grid-template-columns: 1fr;
+  }
+}

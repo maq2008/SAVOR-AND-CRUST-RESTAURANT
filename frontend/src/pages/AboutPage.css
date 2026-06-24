@@ -1,0 +1,301 @@
+.about-page {
+  background: #0a0a0a;
+}
+
+.about-hero {
+  position: relative;
+  height: 50vh;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.about-hero-bg {
+  position: absolute;
+  inset: 0;
+  background: url('https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=1920&q=80') center/cover no-repeat;
+  filter: brightness(0.3);
+}
+
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(10,10,10,0.5) 0%, rgba(10,10,10,0.9) 100%);
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.about-hero-content h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 300;
+  color: #fff;
+  margin: 0.5rem 0;
+}
+
+.about-hero-content p {
+  color: #999;
+  font-size: 1rem;
+}
+
+.accent {
+  color: #c9a96e;
+  font-family: 'Georgia', serif;
+  font-style: italic;
+}
+
+.about-story {
+  padding: 7rem 2rem;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.about-images {
+  position: relative;
+  height: 500px;
+}
+
+.about-img {
+  position: absolute;
+  border-radius: 4px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-img-main {
+  top: 0;
+  left: 0;
+  width: 65%;
+  height: 100%;
+  background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80');
+  z-index: 2;
+}
+
+.about-img-secondary {
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 65%;
+  background-image: url('https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=600&q=80');
+  z-index: 1;
+  border: 4px solid #0a0a0a;
+}
+
+.about-text h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+.about-text p {
+  color: #999;
+  line-height: 1.8;
+  font-size: 0.95rem;
+  margin-bottom: 1.2rem;
+}
+
+.about-text blockquote {
+  border-left: 3px solid #c9a96e;
+  padding-left: 1.5rem;
+  margin-top: 2rem;
+  font-style: italic;
+  color: #bbb;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.about-text blockquote cite {
+  display: block;
+  margin-top: 0.8rem;
+  font-size: 0.85rem;
+  color: #777;
+  font-style: normal;
+}
+
+.about-timeline {
+  padding: 5rem 2rem;
+  background: #0d0d0d;
+}
+
+.section-heading {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.timeline {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(201,169,110,0.3);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  background: #c9a96e;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.timeline-year {
+  flex: 1;
+  text-align: right;
+  color: #c9a96e;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding-top: 0.2rem;
+}
+
+.timeline-content {
+  flex: 1;
+}
+
+.timeline-content h3 {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+.timeline-content p {
+  color: #888;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.about-values {
+  padding: 5rem 2rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.value-card {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 6px;
+}
+
+.value-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.value-card h3 {
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+}
+
+.value-card p {
+  color: #888;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.section-tag {
+  color: #c9a96e;
+  font-size: 0.7rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 968px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-images {
+    height: 350px;
+  }
+
+  .timeline::before {
+    left: 0;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    padding-left: 2rem;
+  }
+
+  .timeline-item::before {
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  .timeline-year {
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-story,
+  .about-timeline,
+  .about-values {
+    padding: 4rem 1.5rem;
+  }
+
+  .about-images {
+    height: 280px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+}

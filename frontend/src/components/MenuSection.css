@@ -1,0 +1,145 @@
+.menu {
+  padding: 7rem 2rem;
+  background: linear-gradient(180deg, #0a0a0a 0%, #111 100%);
+  overflow: hidden;
+}
+
+.menu-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.menu-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 2.5rem 0 3rem;
+  flex-wrap: wrap;
+}
+
+.menu-tab {
+  padding: 0.6rem 1.6rem;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: transparent;
+  color: #888;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+.menu-tab:hover {
+  color: #c9a96e;
+  border-color: #c9a96e;
+}
+
+.menu-tab.active {
+  background: #c9a96e;
+  border-color: #c9a96e;
+  color: #1a1a1a;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.menu-item {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 6px;
+  overflow: hidden;
+  text-align: left;
+  transition: border-color 0.3s;
+}
+
+.menu-item:hover {
+  border-color: rgba(201,169,110,0.3);
+}
+
+.menu-item-img {
+  height: 180px;
+  background: linear-gradient(135deg, #1a1a1a 0%, #222 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-item-emoji {
+  font-size: 3.5rem;
+}
+
+.menu-item-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #c9a96e;
+  color: #1a1a1a;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0.25rem 0.7rem;
+  border-radius: 2px;
+}
+
+.menu-item-content {
+  padding: 1.5rem;
+}
+
+.menu-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.menu-item-header h3 {
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.menu-item-price {
+  color: #c9a96e;
+  font-weight: 600;
+  font-size: 1.05rem;
+  white-space: nowrap;
+}
+
+.menu-item-desc {
+  color: #777;
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+.menu-loading {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(201,169,110,0.2);
+  border-top-color: #c9a96e;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    padding: 4rem 1.5rem;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+}
