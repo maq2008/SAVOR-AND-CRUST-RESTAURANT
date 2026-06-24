@@ -22,19 +22,10 @@ export default function BookPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    try {
-      await fetch('/api/reservations/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          ...form,
-          guests: parseInt(form.guests),
-        }),
-      });
-    } catch {
-    }
-    setSubmitted(true);
-    setLoading(false);
+    setTimeout(() => {
+      setSubmitted(true);
+      setLoading(false);
+    }, 1500);
   };
 
   return (
